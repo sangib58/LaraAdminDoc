@@ -1,0 +1,320 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>AdminLV - VueJs Starter Admin Template with Laravel 8</title>
+
+	<meta name="description" content="">
+	<meta name="author" content="Sangib Kumar Saha">
+	<meta name="copyright" content="Sangib Kumar Saha">
+	<meta name="generator" content="Documenter v2.0 https://evp.to/documenter">
+	<meta name="date" content="2021-04-26T00:00:00+02:00">
+
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+
+</head>
+<body class="documenter-project-adminlv">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#project_description" title="Project description">Project description</a></li>
+			<li><a href="#project_requirement" title="Project Requirement">Project Requirement</a></li>
+			<li><a href="#credentials" title="Credentials">Credentials</a></li>
+			<li><a href="#set_up_laraapi_project" title="Set up LaraApi Project">Set up LaraApi Project</a></li>
+			<li><a href="#set_up_vueclient_project" title="Set up VueClient Project">Set up VueClient Project</a></li>
+			<li><a href="#conclusion" title="Conclusion">Conclusion</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Sangib Kumar Saha 2021<br>
+		made with the <a href="https://evp.to/documenter">Documenter v2.0</a>
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>AdminLV</h1>
+	<h2>VueJs Starter Admin Template with Laravel 8</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 04/26/2021</li>
+	<li>latest update: 04/26/2021</li>
+	<li>by: Sangib Kumar Saha</li>
+	
+	<li>email: <a href="mailto:&#115;&#97;&#110;&#103;&#105;&#98;&#114;&#117;&#115;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#97;&#110;&#103;&#105;&#98;&#114;&#117;&#115;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p>Thank you for purchasing my script. If you have any questions that are beyond the scope of this help file, feel free to email me.</p>
+	</section>
+
+	<section id="project_description">
+	<div class="page-header"><h3>Project description</h3><hr class="notop"></div>
+<p>
+	If you are looking for a SPA admin template for your upcoming project then probably you come to the right place. AdminLV is a single page admin template developed by Vue.js with Laravel 8 API.It&#39;s covered most common features that you need to start a project.</p>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+</section>
+<section id="project_requirement">
+	<div class="page-header"><h3>Project Requirement</h3><hr class="notop"></div>
+<ul>
+	<li>
+		<p>
+			Any Code Editor( i prefer VS code).</p>
+	</li>
+	<li>
+		<p>
+			PHP 7.4 or later.</p>
+	</li>
+	<li>
+		<p>
+			Mysql 5.7 or later.</p>
+	</li>
+	<li>
+		<p>
+			XAMPP/WAMP.</p>
+	</li>
+	<li>
+		<p>
+			Laravel 8x.</p>
+	</li>
+	<li>
+		<p>
+			Latest Node.js</p>
+	</li>
+</ul>
+</section>
+<section id="credentials">
+	<div class="page-header"><h3>Credentials</h3><hr class="notop"></div>
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif;">For Admin access, Username:admin@2021&nbsp;Password:admin@2021</span></p>
+<p>
+	For User access, Username:user@2021&nbsp;Password:user@2021</p>
+</section>
+<section id="set_up_laraapi_project">
+	<div class="page-header"><h3>Set up LaraApi Project</h3><hr class="notop"></div>
+<ul>
+	<li>
+		<p>
+			Open Mysql DB and create a new database and named it adminlv-db.</p>
+	</li>
+	<li>
+		<p>
+			Open AdminApi project on editor and open .env file. you will see DB_DATABASE name set as adminlv-db.you can change the database name from here and if you want to change the DB_USERNAME and DB_PASSWORD, change those from here.</p>
+	</li>
+</ul>
+<pre class="prettyprint lang-php linenums">
+APP_ENV=local
+
+APP_KEY=base64:oB2E1NBG07Pzp9uw1zubd7h/2A2/DC9h98ln8XyWr5g=
+
+APP_DEBUG=false
+
+APP_URL=http://localhost
+
+
+LOG_CHANNEL=stack
+
+LOG_LEVEL=debug
+
+
+DB_CONNECTION=mysql
+
+DB_HOST=127.0.0.1
+
+DB_PORT=3306
+
+DB_DATABASE=adminlv-db
+
+DB_USERNAME=root
+
+DB_PASSWORD=</pre>
+<ul>
+	<li>
+		<p>
+			Now Open terminal,go to the LaraApi project location and execute below commands&nbsp; &nbsp; &nbsp;</p>
+	</li>
+</ul>
+<p>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&gt;php artisan migrate</p>
+<p>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&gt;php artisan db:seed</p>
+<p>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&gt;php artisan serve</p>
+<ul>
+	<li>
+		<p>
+			After successful migration and database seeding you should check your mysql server. you will find some tables with seed data in adminlv-db database and from here your api is ready to go.</p>
+	</li>
+</ul>
+<ul>
+	<li>
+		<p>
+			Now go to LaraApi-&gt;storage-&gt;logs location, you will find here daily log files which will generate if any error occurs while running your app.</p>
+	</li>
+</ul>
+<ul>
+	<li>
+		<p>
+			This project used role based authorization. Through migration data you will get two roles, Admin and User. You can add more role from Role List menu after running the Client project. These roles are used in middlewares for authorization.Currently api has two middleware for authorization, one is SuperAdminAuth.php for super admin users and CommonAuth.php for all users,you will find those on LaraApi-&gt;app-&gt;Http-&gt;Middleware location.</p>
+	</li>
+	<li>
+		<p>
+			This API project is completely seperate, so you can check it by Postman or Insomnia or any other Api client.To check api you should go first on&nbsp;http://localhost:8000/api/Users/GetLoginInfo(POST method) and execute this by username and password,</p>
+	</li>
+</ul>
+<p>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p>
+<div>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;username&quot;:&quot;admin@2021&quot;,</div>
+<div>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;password&quot;:&quot;admin@2021&quot;</div>
+<div>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</div>
+<div>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; after executing you will get</div>
+<div>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>
+<pre class="prettyprint lang-js linenums">
+{
+
+  &quot;status&quot;: &quot;Success&quot;,
+
+  &quot;message&quot;: null,
+
+  &quot;return&quot;: {
+
+    &quot;token&quot;: &quot;19|ewbqnaEoMWukP7dp3J8Hgk8lgjLByUx8OQmdCh0S&quot;,
+
+    &quot;obj&quot;: {
+
+      &quot;id&quot;: 1,
+
+      &quot;user_role_id&quot;: 1,
+
+      &quot;name&quot;: &quot;John&quot;,
+
+      &quot;username&quot;: &quot;admin@2021&quot;,
+
+      &quot;mobile&quot;: null,
+
+      &quot;email&quot;: &quot;&#106;&#111;&#104;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;&quot;,
+
+      &quot;email_verified_at&quot;: null,
+
+      &quot;date_of_birth&quot;: null,
+
+      &quot;image_path&quot;: &quot;http://103.103.100.27:100/images1619344151avatar-2.png&quot;,
+
+      &quot;is_active&quot;: 1,
+
+      &quot;added_by&quot;: 1,
+
+      &quot;last_updated_by&quot;: 1,
+
+      &quot;is_migration_data&quot;: 1,
+
+      &quot;created_at&quot;: &quot;2021-04-24T16:19:28.000000Z&quot;,
+
+      &quot;updated_at&quot;: &quot;2021-04-25T14:27:38.000000Z&quot;
+
+    }
+
+  }
+
+}</pre>
+<div>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Use the token as Bearer token for other requests. you will find all other methods on LaraApi-&gt;route-&gt;api.php or excecute &quot;php artisan route:list&quot; on terminal,you will get all api routes.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="set_up_vueclient_project">
+	<div class="page-header"><h3>Set up VueClient Project</h3><hr class="notop"></div>
+<ul>
+	<li>
+		Open AdminClient on Editor.On terminal first execute &quot;npm install&quot;, it will add node modules to project then execute &quot;npm run serve&quot;. Now the project will be running at&nbsp;http://localhost:8080/.</li>
+</ul>
+<ul>
+	<li>
+		Now open VueClient-&gt;src-&gt;config.js file, you should see a hostname here which is set to http://localhost:8000. Actually our LaraApi project is running here.Change this url in case of actual hosting.</li>
+</ul>
+<p>
+	&nbsp;</p>
+</section>
+<section id="conclusion">
+	<div class="page-header"><h3>Conclusion</h3><hr class="notop"></div>
+<p>
+	Once again, thank you so much for purchasing this script. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this script. I&#39;ll do my best to assist.</p>
+<p>
+	<b>Sangib Kumar Saha</b></p>
+</section>
+
+	</div>
+</body>
+</html>
